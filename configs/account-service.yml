@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      default-zone: http://sldakjflkj/eureka
+      default-zone: http://mmssaa.cloudrium.io/eureka
   instance:
     instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
 
