@@ -1,3 +1,10 @@
+eureka:
+  client:
+    service-url:
+      default-zone: http://sldakjflkj/eureka
+  instance:
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+
 logging:
   level:
     org.springframework.web: info
