@@ -8,3 +8,6 @@ eureka:
 logging:
   level:
     org.springframework.web: info
+
+say:
+  cheese: Kimchi~
