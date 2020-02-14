@@ -10,4 +10,4 @@ logging:
     org.springframework.web: info
 
 say:
-  cheese: Cheese!
+  cheese: Kimchi!
