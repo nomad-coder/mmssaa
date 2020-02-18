@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+zuul:
+  host:
+    connect-timeout-millis: 5000
+    socket-timeout-millis: 5000
+  routes:
+    account-service:
+      path: /accounts/**
+      serviceId: account-service
+      stripPrefix: true
+  ignored-services: '*' # routes 에 정의되지 않은 요청을 무시함.
+  sensitive-headers: '*' # header bypass
